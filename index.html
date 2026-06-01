@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Ailana Bovaeva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">✦</div>
+            <div class="menu">
+                <a href="#about">Обо мне</a>
+                <a href="#works">Лучшие работы</a>
+                <a href="all-works.html">Все работы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="star left"></div>
+    <div class="star right"></div>
+    <div class="container hero-content">
+        <div class="designer">Designer</div>
+        <div class="portfolio">Portfolio</div>
+        <div class="wave">〰〰〰</div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-wrapper">
+            <div class="photos">
+                <div class="polaroid">
+                    <img src="https://picsum.photos/id/64/300/300" alt="Ailana photo">
+                    <h3>Bovaeva Ailana</h3>
+                    <p>Saint-Petersburg</p>
+                    <p>18.05.25</p>
+                </div>
+                <div class="polaroid">
+                    <img src="https://picsum.photos/id/20/300/300" alt="art">
+                </div>
+            </div>
+            <div class="about-text">
+                <h2 class="about-title">Обо мне <span>About me</span></h2>
+                <p>Всем привет! Меня зовут Айлана и я дизайнер. Учусь в РГПУ им. Герцена с 2024 года. Родилась в Калмыкии, но теперь живу в Санкт-Петербурге.</p>
+                <p>На этом сайте-портфолио вы можете посмотреть мои работы, сделанные за 1 и 2 курсы обучения.</p>
+                <div class="skills">
+                    <div class="skill"><p>Figma</p><div class="bar"><div class="fill figma"></div></div></div>
+                    <div class="skill"><p>Procreate</p><div class="bar"><div class="fill procreate"></div></div></div>
+                    <div class="skill"><p>Adobe Illustrator</p><div class="bar"><div class="fill ai"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="works" class="works">
+    <div class="container">
+        <h2>Лучшие работы</h2>
+        <div class="subtitle">Best works</div>
+        <div class="category">Типографика</div>
+        <div class="slider-container">
+            <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <div class="gallery" id="galleryContainer"></div>
+            <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="caption" id="workCaption">Плакат с цитатой</div>
+    </div>
+</section>
+
+<section id="contacts" class="contacts">
+    <div class="container">
+        <div class="contacts-title"><h2>Контакты</h2></div>
+        <div class="contacts-grid">
+            <div>
+                <h3>Мои соцсети:</h3>
+                <div class="socials">
+                    <div class="social"><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+                    <div class="social"><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                    <div class="social"><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+            <div>
+                <h3>Написать мне на почту:</h3>
+                <textarea id="emailMessage" placeholder="Ваше сообщение..."></textarea>
+                <button id="sendEmailBtn">Отправить</button>
+                <p id="mailFeedback" style="margin-top: 8px; font-size: 14px;"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div><h2>Футер</h2><p>Это очень крутой сайт-портфолио</p></div>
+            <div>Заходим на соцсети, подписываемся, ставим лайки</div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
